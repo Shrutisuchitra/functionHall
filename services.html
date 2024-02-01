@@ -1,0 +1,168 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Services</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+        <style>
+                  .gradient {
+      
+      background:linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+      
+      }
+
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .font2 {
+  font-family: 'Domine', serif;
+}
+
+            /*navbar*/
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navbar */
+nav {
+  
+  float:none;
+  font-size: 30px;
+  
+  margin: 10px;
+  
+}
+
+/* Style the navbar links */
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration:none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+
+     .font {
+font-family: 'Beau Rivage', cursive;
+font-family: 'Dancing Script', cursive;    
+
+}
+
+            .column {
+             float: left;
+             width: 31.33%;
+             padding: 5px;
+            }
+
+    /* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+        </style>
+    </head>
+    <body class="gradient">
+        <!--navbar-->
+<nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./gallery1.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+        <div class="container font2" style="padding-left: 25px;">
+            <br/>
+            <h1 style="text-align: center; font-family:cursive; font-weight: bold;">Services</h1>
+            <br/>
+        <div class="row">
+            <div class="column">
+            <img src="https://image.wedmegood.com/resized/540X/uploads/member/4504065/1691005017_Utthan__1_.jpg?crop=19,98,1983,1115" style="width: 100%; ">
+            <h1>Wedding Ceremony</h1>
+            <p id="demo" style="text-align: center; font-size: 20px;"></p>
+            <button class="button" onclick="one();">Read More</button>
+            </div>
+            <div class="column">
+            <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_531,w_4029,h_2267,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/karma-lakelands/IMG_E3498" alt="Forest" style="width:100%">
+            <h1>Corporate Events</h1>
+            <p id="root" style="text-align: center; font-size: 20px;"></p>
+            <button class="button" onclick="two();" style="text-align: center;">Read More</button>
+            </div>
+            <div class="column">
+            <img src="https://5.imimg.com/data5/ANDROID/Default/2022/11/WD/YB/RH/138253089/product-jpeg.jpg" style="width:100%">
+            <h1>Birthday party</h1>
+            <p id="demo1" style="text-align: center; font-size: 20px;"></p>
+            <button class="button" onclick="three();">Read More</button>
+            </div>
+            
+        </div>
+        </div>
+<br/>
+
+        <!--footer-->
+<footer class="py-3 my-4" style="background-color:rgb(170, 219, 235);">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="./index2.html" class="nav-link px-2 text-body-secondary" style="font-weight: bold; color:#fff; font-size:20px;">Home</a></li>
+    <li class="nav-item" style="font-weight: bold; font-size: 20px;"><a href="./about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+    <li class="nav-item" style="font-weight: bold; font-size: 20px;"><a href="./services.html" class="nav-link px-2 text-body-secondary">Services</a></li>
+    <li class="nav-item" style="font-weight: bold; font-size: 20px;"><a href="./gallery1.html" class="nav-link px-2 text-body-secondary">Gallery</a></li>
+    
+  </ul>
+  <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+</footer>
+
+
+
+        <script>
+            function one() {
+        
+            const wedding = ["A wedding is a once in a lifetime event, and we want yours to be one of the grandset & memorable."];
+            document.getElementById("demo").innerHTML = wedding;
+        
+        }
+        
+        function two() {
+        
+        const corporate = ["We serve your corporate guests with the best luxurious hospitality and graceful services."];
+        document.getElementById("root").innerHTML = corporate;
+        }
+        
+        function three() {
+        
+        const birthday = ["Our venue is an ideal place for organizing all types of birthday parties for your loved once."];
+        document.getElementById("demo1").innerHTML = birthday;
+        }
+        
+        </script>    
+    </body>
+    </html>
